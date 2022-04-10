@@ -1,0 +1,18 @@
+.select-wrapp {
+	display: inline-block;
+	text-align: left;
+	font-family: sans-serif;
+	padding: 15px 20px 10px;
+	background: #f6f6f6;
+	border-radius: 5px;
+	
+	.select-item {
+		margin-bottom: 8px;
+	}
+	.select-all-btn {
+		all: unset;
+		cursor: pointer;
+		text-decoration: underline;
+		margin-bottom: 15px;
+	}
+}

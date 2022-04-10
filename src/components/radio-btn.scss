@@ -1,0 +1,50 @@
+.radioBtn {
+	display: block;
+	input {
+		display: none;
+		
+		&:checked + label::after {
+			display: inline-block;
+		}
+	}
+	label {
+		display: inline-block;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #999;
+			border-radius: 50%;
+			color: #666;
+			position: absolute;
+			margin-right: 10px;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		&::after {
+			content: "";
+			display: none;
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background: #009434;
+			top: 4px;
+			left: 4px;
+			border-radius: 50%;
+		}
+
+		span {
+			font-size: 18px;
+			white-space: nowrap;
+			float: left;
+			margin-left: 35px;
+			margin-top: -3px;
+		}
+		
+	}
+
+	
+}
